@@ -1,0 +1,224 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Dummy User",
+      "email": "dummy@mail.com",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "Dummy 2",
+      "email": "dummy2@mail.com",
+      "password": "123456"
+    },
+    {
+      "name": "dias",
+      "email": "dias@gmail.com",
+      "password": "dias1234",
+      "id": "kpm8A-AxtCE"
+    },
+    {
+      "name": "coba",
+      "email": "coba@gmail.com",
+      "password": "coba1234",
+      "id": "6TkFhCuk3qA"
+    }
+  ],
+  "paket-data": [
+    {
+      "id": "1",
+      "name": "Paket Data 1GB",
+      "kuota": 1,
+      "price": 10000,
+      "provider": "Provider A"
+    },
+    {
+      "id": "2",
+      "name": "Paket Data 5GB",
+      "kuota": 5,
+      "price": 45000,
+      "provider": "Provider A"
+    },
+    {
+      "id": "3",
+      "name": "Paket Data 10GB",
+      "kuota": 10,
+      "price": 80000,
+      "provider": "Provider A"
+    },
+    {
+      "id": "4",
+      "name": "Paket Data 1GB",
+      "kuota": 1,
+      "price": 12000,
+      "provider": "Provider B"
+    },
+    {
+      "id": "5",
+      "name": "Paket Data 5GB",
+      "kuota": 5,
+      "price": 40000,
+      "provider": "Provider B"
+    },
+    {
+      "id": "6",
+      "name": "Paket Data 10GB",
+      "kuota": 10,
+      "price": 74000,
+      "provider": "Provider B"
+    },
+    {
+      "id": "7",
+      "name": "Paket Data 1GB",
+      "kuota": 1,
+      "price": 8000,
+      "provider": "Provider C"
+    },
+    {
+      "id": "8",
+      "name": "Paket Data 5GB",
+      "kuota": 5,
+      "price": 38000,
+      "provider": "Provider C"
+    },
+    {
+      "id": "9",
+      "name": "Paket Data 10GB",
+      "kuota": 10,
+      "price": 82000,
+      "provider": "Provider C"
+    },
+    {
+      "id": "10",
+      "name": "Paket Data 15GB",
+      "kuota": 15,
+      "price": 140000,
+      "provider": "Provider D"
+    },
+    {
+      "id": "11",
+      "name": "Paket Data 25GB",
+      "kuota": 25,
+      "price": 110000,
+      "provider": "Provider A"
+    },
+    {
+      "id": "12",
+      "name": "Paket Data 50GB",
+      "kuota": 50,
+      "price": 195000,
+      "provider": "Provider A"
+    },
+    {
+      "id": "13",
+      "name": "Paket Data 15GB",
+      "kuota": 15,
+      "price": 95000,
+      "provider": "Provider B"
+    },
+    {
+      "id": "14",
+      "name": "Paket Data 30GB",
+      "kuota": 30,
+      "price": 150000,
+      "provider": "Provider B"
+    },
+    {
+      "id": "15",
+      "name": "Paket Data 20GB",
+      "kuota": 20,
+      "price": 105000,
+      "provider": "Provider C"
+    },
+    {
+      "id": "16",
+      "name": "Paket Data 100GB",
+      "kuota": 100,
+      "price": 350000,
+      "provider": "Provider C"
+    },
+    {
+      "id": "17",
+      "name": "Paket Data 2GB",
+      "kuota": 2,
+      "price": 15000,
+      "provider": "Provider D"
+    },
+    {
+      "id": "18",
+      "name": "Paket Data 8GB",
+      "kuota": 8,
+      "price": 60000,
+      "provider": "Provider D"
+    },
+    {
+      "id": "19",
+      "name": "Paket Data 12GB",
+      "kuota": 12,
+      "price": 85000,
+      "provider": "Provider D"
+    },
+    {
+      "id": "20",
+      "name": "Paket Data 40GB",
+      "kuota": 40,
+      "price": 175000,
+      "provider": "Provider D"
+    },
+    {
+      "id": "21",
+      "name": "Paket Data 3GB",
+      "kuota": 3,
+      "price": 22000,
+      "provider": "Provider E"
+    },
+    {
+      "id": "22",
+      "name": "Paket Data 7GB",
+      "kuota": 7,
+      "price": 52000,
+      "provider": "Provider E"
+    },
+    {
+      "id": "23",
+      "name": "Paket Data 18GB",
+      "kuota": 18,
+      "price": 98000,
+      "provider": "Provider E"
+    },
+    {
+      "id": "24",
+      "name": "Paket Data 35GB",
+      "kuota": 35,
+      "price": 160000,
+      "provider": "Provider E"
+    },
+    {
+      "id": "25",
+      "name": "Paket Data 60GB",
+      "kuota": 60,
+      "price": 240000,
+      "provider": "Provider E"
+    }
+  ],
+  "transactions": [
+    {
+      "userId": 1,
+      "paketId": "23",
+      "phone": "0865654467",
+      "price": 98000,
+      "date": "2026-04-19T13:59:15.289Z",
+      "id": "ORk4LEE0ckA"
+    },
+    {
+      "userId": "6TkFhCuk3qA",
+      "paketId": "25",
+      "phone": "0897273733",
+      "price": 240000,
+      "date": "2026-04-19T15:53:25.448Z",
+      "id": "N1COcyblxe0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
