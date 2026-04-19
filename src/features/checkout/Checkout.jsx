@@ -41,7 +41,7 @@ export default function Checkout({ paket, onClose }) {
       return;
     }
 
-    navigate("/");
+    navigate("/transactions/success");
     onClose();
   };
 

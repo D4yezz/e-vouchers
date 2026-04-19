@@ -64,10 +64,10 @@ export default function PaketData() {
         id="paket-data"
         className="flex flex-col w-full gap-4 px-8 mt-6 mb-20"
       >
-        <div className="flex items-center justify-between mb-10">
-          <h2 className="text-4xl font-bold">List Paket Data</h2>
+        <div className="flex lg:flex-row flex-col items-center justify-between mb-10">
+          <h2 className="text-4xl font-bold lg:mb-0 mb-4">List Paket Data</h2>
 
-          <div className="flex items-center justify-end gap-4">
+          <div className="flex items-center lg:justify-end justify-center gap-4 lg:flex-nowrap flex-wrap">
             <select
               value={provider}
               onChange={(e) => {
@@ -111,11 +111,13 @@ export default function PaketData() {
             </select>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-6 lg:h-155 h-fit">
           {paginatedData.length > 0 || loading ? (
             paginatedData.map((paket) => <Card key={paket.id} item={paket} />)
           ) : (
-            <p className="text-gray-500">Data tidak ditemukan</p>
+            <p className="text-gray-500 h-155 flex items-center justify-center">
+              Data tidak ditemukan
+            </p>
           )}
         </div>
         {loading ? (

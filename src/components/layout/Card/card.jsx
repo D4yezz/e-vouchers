@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 export default function Card({ item }) {
   return (
-    <div className="flex flex-col justify-between gap-2 p-4 duration-300 ease-in-out border border-red-600 rounded-lg shadow-md w-[30%] hover:shadow-lg hover:shadow-red-500/40 font-inter">
+    <div className="flex flex-col h-fit justify-between gap-2 p-4 duration-300 ease-in-out border border-red-600 rounded-lg shadow-md lg:w-[30%] w-full hover:shadow-lg hover:shadow-red-500/40 font-inter">
       <h2 className="text-3xl font-bold text-red-600">{item.name}</h2>
       <p className="text-gray-500 text-md ">{item.provider}</p>
       <div className="flex items-center justify-center w-full py-4 my-2 rounded-lg bg-linear-to-br from-red-50 to-red-200">

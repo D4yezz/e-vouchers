@@ -94,11 +94,11 @@ export default function DetailPaketPage() {
         <ArrowLeft className="w-5 h-5" />
         Kembali
       </motion.button>
-      <section className="flex w-full gap-10 px-28">
+      <section className="flex w-full gap-10 px-6 lg:px-28">
         <Information paket={paketById} />
         <PriceCard paket={paketById} />
       </section>
-      <section className="w-full px-16 my-16 space-y-6">
+      <section className="w-full px-6 my-16 space-y-6 lg:px-16">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-bold">
             Lainnya dari{" "}
@@ -111,7 +111,7 @@ export default function DetailPaketPage() {
             Lihat Semua <ArrowRight size={20} />
           </Link>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-wrap items-center justify-between gap-4 lg:flex-nowrap">
           {filteredPaket.slice(0, 3).map((item) => (
             <Card key={item.id} item={item} />
           ))}

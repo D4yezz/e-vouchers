@@ -16,7 +16,7 @@ export default function HomePage() {
     }
   }, [location]);
   return (
-    <main className="min-h-screen px-6 font-instrument bg-gray-50">
+    <main className="min-h-screen lg:px-6 px-4 font-instrument bg-gray-50">
       <Navbar />
       <Carousel />
       <PaketData />

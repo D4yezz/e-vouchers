@@ -5,6 +5,7 @@ import ProtectedRoute from "./protectedRoute";
 import TransactionsPage from "@/pages/transactions";
 import DetailPaketPage from "@/pages/detail-paket";
 import RegisterPage from "@/pages/auth/register";
+import SuccessPage from "@/pages/transactions/success";
 
 export const routes = createBrowserRouter([
   {
@@ -36,6 +37,14 @@ export const routes = createBrowserRouter([
     element: (
       <ProtectedRoute>
         <TransactionsPage />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/transactions/success",
+    element: (
+      <ProtectedRoute>
+        <SuccessPage />
       </ProtectedRoute>
     ),
   },

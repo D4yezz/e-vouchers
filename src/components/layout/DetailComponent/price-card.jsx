@@ -26,7 +26,7 @@ export default function PriceCard({ paket }) {
               Harga
             </p>
             <div className="flex items-baseline gap-2 mb-2">
-              <span className="text-5xl font-bold text-red-600 md:text-6xl">
+              <span className="text-3xl font-bold text-red-600 lg:text-5xl md:text-6xl">
                 {formatPrice(paket.price)}
               </span>
             </div>
