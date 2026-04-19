@@ -8,15 +8,18 @@ import { useAuthStore } from "@/store/authStore";
 import { useToastStore } from "@/store/toastStore";
 import { useNavigate } from "react-router";
 import Button from "@/components/ui/Button";
+import { s } from "motion/react-client";
 
 export default function Checkout({ paket, onClose }) {
   const toast = useToastStore((state) => state.showToast);
   const [phone, setPhone] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const user = useAuthStore((state) => state.user);
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
     if (!phone) {
       toast("Nomor HP wajib diisi", "error");
       return;
@@ -39,6 +42,8 @@ export default function Checkout({ paket, onClose }) {
       console.error("Error creating transaction:", e);
       toast("Gagal membuat transaksi. Silakan coba lagi.", "error");
       return;
+    } finally {
+      setLoading(false);
     }
 
     navigate("/transactions/success");
@@ -94,7 +99,7 @@ export default function Checkout({ paket, onClose }) {
                 Batal
               </button>
 
-              <Button type="submit" className={"text-white"}>
+              <Button disabled={loading} type="submit" className={"text-white"}>
                 Konfirmasi
               </Button>
             </div>
