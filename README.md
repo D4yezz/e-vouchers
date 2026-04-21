@@ -101,9 +101,9 @@ Desain dibuat sederhana dengan fokus pada:
 
 ---
 
-### 2. Zustand tanpa React Query
+### 2. Zustand
 
-**Dipilih:** Zustand saja
+**Dipilih:** Zustand
 
 **Alasan:**
 
